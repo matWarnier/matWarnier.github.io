@@ -1,0 +1,124 @@
+<html>
+          <head>
+            <meta charset="utf-8">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">                     
+              google.charts.load('current', {packages:["orgchart"]});
+              google.charts.setOnLoadCallback(drawChart);
+
+              function drawChart() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Name');
+                data.addColumn('string', 'Manager'); 
+                data.addColumn('string', 'ToolTip');
+
+                // For each orgchart box, provide the name, manager, and tooltip to show.
+                data.addRows([[{v: '10000000000000|1660|10000000000001|?|Edme GUILLOT (1660 - 1720) & Philiberte PARENT (? - ?)|1', f:'Edme GUILLOT (1660 - 1720) & Philiberte PARENT (? - ?)'},'', 'AAAA'],[{v: '10000000000000|1660|10000000000001|?|Edme GUILLOT (1660 - 1720) & Philiberte PARENT (? - ?)|1', f:'Edme GUILLOT (1660 - 1720) & Philiberte PARENT (? - ?)'},'10000000000000|1660|Edme GUILLOT (1660 - 1720)', ''],[{v: '11000000000000|1694|11000000000001|?|François GUILLOT (1694 - 1758) & Barbe CHAUSSON ou CHAUFFON (? - ?)|5', f:'François GUILLOT (1694 - 1758) & Barbe CHAUSSON ou CHAUFFON (? - ?)'},'11000000000000|1694|François GUILLOT (1694 - 1758)', ''],[{v: '11300000000000|1725|11300000000001|?|François GUILLOT (1725 - ?) & Marie DOISTOT ou DOISTEAU (? - ?)|3', f:'François GUILLOT (1725 - ?) & Marie DOISTOT ou DOISTEAU (? - ?)'},'11300000000000|1725|François GUILLOT (1725 - ?)', ''],[{v: '11330000000000|1764|11330000000001|1768|Jean GUILLOT (1764 - 1838) & Marie  SOUFFLARD (1768 - 1800)|9', f:'Jean GUILLOT (1764 - 1838) & Marie  SOUFFLARD (1768 - 1800)'},'11330000000000|1764|Jean GUILLOT (1764 - 1838)', ''],[{v: '11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', f:'Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)'},'11330000000000|1764|Jean GUILLOT (1764 - 1838)', ''],[{v: '11333000000000|1811|11333000000001|1803|Hippolyte GUILLOT (1811 - 1880) & Marie Félicité  GODARD (1803 - 1877)|2', f:'Hippolyte GUILLOT (1811 - 1880) & Marie Félicité  GODARD (1803 - 1877)'},'11333000000000|1811|Hippolyte GUILLOT (1811 - 1880)', ''],[{v: '11333100000000|1841|11333100000001|1844|Hippolyte GUILLOT (1841 - 1904) & Louise Léonie BUCHY (1844 - 1871)|3', f:'Hippolyte GUILLOT (1841 - 1904) & Louise Léonie BUCHY (1844 - 1871)'},'11333100000000|1841|Hippolyte GUILLOT (1841 - 1904)', ''],[{v: '11333100000000|1841|11333100000002|1854|Hippolyte GUILLOT (1841 - 1904) & Joséphine MOREAU (1854 - ??)|3', f:'Hippolyte GUILLOT (1841 - 1904) & Joséphine MOREAU (1854 - ??)'},'11333100000000|1841|Hippolyte GUILLOT (1841 - 1904)', ''],[{v: '11333110000000|1868|11333110000001|?|Fernand Achille GUILLOT (1868 - 1923) & Bernadine WILMS (? - ?)|1', f:'Fernand Achille GUILLOT (1868 - 1923) & Bernadine WILMS (? - ?)'},'11333110000000|1868|Fernand Achille GUILLOT (1868 - 1923)', ''],[{v: '11333110000000|1868|11333110000002|?|Fernand Achille GUILLOT (1868 - 1923) & Françoise Pauline CHAS (? - ?)|1', f:'Fernand Achille GUILLOT (1868 - 1923) & Françoise Pauline CHAS (? - ?)'},'11333110000000|1868|Fernand Achille GUILLOT (1868 - 1923)', ''],[{v: '11333111000000|1902|11333111000001|1902|Fernande GUILLOT (1902 - 1969) & Célestin ROCHEFORT (1902 - 1985)|1', f:'Fernande GUILLOT (1902 - 1969) & Célestin ROCHEFORT (1902 - 1985)'},'11333111000000|1902|Fernande GUILLOT (1902 - 1969)', ''],[{v: '11333120000000|1879|11333120000001|1879|Maurice GUILLOT (1879 - 1938) & Marie Berthe DUTILLET (1879 - 1914)|1', f:'Maurice GUILLOT (1879 - 1938) & Marie Berthe DUTILLET (1879 - 1914)'},'11333120000000|1879|Maurice GUILLOT (1879 - 1938)', ''],[{v: '11333130000000|1888|11333130000001|?|Fernande GUILLOT (1888 - 1970) & Jean  CHAS (? - ?)|1', f:'Fernande GUILLOT (1888 - 1970) & Jean  CHAS (? - ?)'},'11333130000000|1888|Fernande GUILLOT (1888 - 1970)', ''],[{v: '11333200000000|1844|11333200000001|?|Achille GUILLOT (1844 - 1908) & Françoise FENIQUET (? - ?)|1', f:'Achille GUILLOT (1844 - 1908) & Françoise FENIQUET (? - ?)'},'11333200000000|1844|Achille GUILLOT (1844 - 1908)', ''],[{v: '11333210000000|1873|11333210000001|1877|Jules Achille GUILLOT (1873 - ??) & Marie Angelle DUTILLET (1877 - 1937)|1', f:'Jules Achille GUILLOT (1873 - ??) & Marie Angelle DUTILLET (1877 - 1937)'},'11333210000000|1873|Jules Achille GUILLOT (1873 - ??)', ''],[{v: '11000000000000|1694|François GUILLOT (1694 - 1758)', f:'François GUILLOT (1694 - 1758)'},'10000000000000|1660|10000000000001|?|Edme GUILLOT (1660 - 1720) & Philiberte PARENT (? - ?)|1', ''],[{v: '11100000000000|1721|Edme GUILLOT (1721 - ?)', f:'Edme GUILLOT (1721 - ?)'},'11000000000000|1694|11000000000001|?|François GUILLOT (1694 - 1758) & Barbe CHAUSSON ou CHAUFFON (? - ?)|5', ''],[{v: '11200000000000|1723|Françoise GUILLOT (1723 - ?)', f:'Françoise GUILLOT (1723 - ?)'},'11000000000000|1694|11000000000001|?|François GUILLOT (1694 - 1758) & Barbe CHAUSSON ou CHAUFFON (? - ?)|5', ''],[{v: '11300000000000|1725|François GUILLOT (1725 - ?)', f:'François GUILLOT (1725 - ?)'},'11000000000000|1694|11000000000001|?|François GUILLOT (1694 - 1758) & Barbe CHAUSSON ou CHAUFFON (? - ?)|5', ''],[{v: '11310000000000|1757|Marie GUILLOT (1757 - ?)', f:'Marie GUILLOT (1757 - ?)'},'11300000000000|1725|11300000000001|?|François GUILLOT (1725 - ?) & Marie DOISTOT ou DOISTEAU (? - ?)|3', ''],[{v: '11320000000000|1759|Marie Françoise GUILLOT (1759 - ?)', f:'Marie Françoise GUILLOT (1759 - ?)'},'11300000000000|1725|11300000000001|?|François GUILLOT (1725 - ?) & Marie DOISTOT ou DOISTEAU (? - ?)|3', ''],[{v: '11330000000000|1764|Jean GUILLOT (1764 - 1838)', f:'Jean GUILLOT (1764 - 1838)'},'11300000000000|1725|11300000000001|?|François GUILLOT (1725 - ?) & Marie DOISTOT ou DOISTEAU (? - ?)|3', ''],[{v: '11331000000000|1799|Nicolas GUILLOT (1799 - ?)', f:'Nicolas GUILLOT (1799 - ?)'},'11330000000000|1764|11330000000001|1768|Jean GUILLOT (1764 - 1838) & Marie  SOUFFLARD (1768 - 1800)|9', ''],[{v: '11332000000000|1809|Savinien GUILLOT (1809 - ?)', f:'Savinien GUILLOT (1809 - ?)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11333000000000|1811|Hippolyte GUILLOT (1811 - 1880)', f:'Hippolyte GUILLOT (1811 - 1880)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11333100000000|1841|Hippolyte GUILLOT (1841 - 1904)', f:'Hippolyte GUILLOT (1841 - 1904)'},'11333000000000|1811|11333000000001|1803|Hippolyte GUILLOT (1811 - 1880) & Marie Félicité  GODARD (1803 - 1877)|2', ''],[{v: '11333110000000|1868|Fernand Achille GUILLOT (1868 - 1923)', f:'Fernand Achille GUILLOT (1868 - 1923)'},'11333100000000|1841|11333100000001|1844|Hippolyte GUILLOT (1841 - 1904) & Louise Léonie BUCHY (1844 - 1871)|3', ''],[{v: '11333111000000|1902|Fernande GUILLOT (1902 - 1969)', f:'Fernande GUILLOT (1902 - 1969)'},'11333110000000|1868|11333110000001|?|Fernand Achille GUILLOT (1868 - 1923) & Bernadine WILMS (? - ?)|1', ''],[{v: '11333111100000|1930|Jean ROCHEFORT (1930 - 2017)', f:'Jean ROCHEFORT (1930 - 2017)'},'11333111000000|1902|11333111000001|1902|Fernande GUILLOT (1902 - 1969) & Célestin ROCHEFORT (1902 - 1985)|1', ''],[{v: '11333120000000|1879|Maurice GUILLOT (1879 - 1938)', f:'Maurice GUILLOT (1879 - 1938)'},'11333100000000|1841|11333100000002|1854|Hippolyte GUILLOT (1841 - 1904) & Joséphine MOREAU (1854 - ??)|3', ''],[{v: '11333121000000|1908|André GUILLOT (1908 - 1993)', f:'André GUILLOT (1908 - 1993)'},'11333120000000|1879|11333120000001|1879|Maurice GUILLOT (1879 - 1938) & Marie Berthe DUTILLET (1879 - 1914)|1', ''],[{v: '11333130000000|1888|Fernande GUILLOT (1888 - 1970)', f:'Fernande GUILLOT (1888 - 1970)'},'11333100000000|1841|11333100000002|1854|Hippolyte GUILLOT (1841 - 1904) & Joséphine MOREAU (1854 - ??)|3', ''],[{v: '11333131000000|?|Robert CHAS (? - ?)', f:'Robert CHAS (? - ?)'},'11333130000000|1888|11333130000001|?|Fernande GUILLOT (1888 - 1970) & Jean  CHAS (? - ?)|1', ''],[{v: '11333200000000|1844|Achille GUILLOT (1844 - 1908)', f:'Achille GUILLOT (1844 - 1908)'},'11333000000000|1811|11333000000001|1803|Hippolyte GUILLOT (1811 - 1880) & Marie Félicité  GODARD (1803 - 1877)|2', ''],[{v: '11333210000000|1873|Jules Achille GUILLOT (1873 - ??)', f:'Jules Achille GUILLOT (1873 - ??)'},'11333200000000|1844|11333200000001|?|Achille GUILLOT (1844 - 1908) & Françoise FENIQUET (? - ?)|1', ''],[{v: '11333211000000|1901|Albert GUILLOT (1901 - 1984)', f:'Albert GUILLOT (1901 - 1984)'},'11333210000000|1873|11333210000001|1877|Jules Achille GUILLOT (1873 - ??) & Marie Angelle DUTILLET (1877 - 1937)|1', ''],[{v: '11334000000000|1812|Paul GUILLOT (1812 - ?)', f:'Paul GUILLOT (1812 - ?)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11335000000000|1812|Virginie GUILLOT (1812 - ?)', f:'Virginie GUILLOT (1812 - ?)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11336000000000|1813|Victoire GUILLOT (1813 - ?)', f:'Victoire GUILLOT (1813 - ?)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11337000000000|1814|Louis GUILLOT (1814 - ?)', f:'Louis GUILLOT (1814 - ?)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11338000000000|1816|Armand GUILLOT (1816 - ?)', f:'Armand GUILLOT (1816 - ?)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11339000000000|1819|Marie GUILLOT (1819 - ?)', f:'Marie GUILLOT (1819 - ?)'},'11330000000000|1764|11330000000002|1780|Jean GUILLOT (1764 - 1838) & Marie Anne DUVEAU ou DUVAUX (1780 - 1854)|9', ''],[{v: '11400000000000|1727|Nicolas GUILLOT (1727 - ?)', f:'Nicolas GUILLOT (1727 - ?)'},'11000000000000|1694|11000000000001|?|François GUILLOT (1694 - 1758) & Barbe CHAUSSON ou CHAUFFON (? - ?)|5', ''],[{v: '11500000000000|1729|Jeanne GUILLOT (1729 - ?)', f:'Jeanne GUILLOT (1729 - ?)'},'11000000000000|1694|11000000000001|?|François GUILLOT (1694 - 1758) & Barbe CHAUSSON ou CHAUFFON (? - ?)|5', '']        ]);
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+ 
+        function get_first_names_and_name(full_name){
+            var the_name = full_name.replace(',','')
+            var the_name_list = the_name.split(' ')
+
+            var the_name_list_new = []
+            for (i = 0; i < the_name_list.length; i++) {
+                if (the_name_list[i].length > 0){
+                    the_name_list_new.push(the_name_list[i]) 
+                }            
+            }
+            the_name_list = the_name_list_new
+
+
+            the_new_name_list = ["","","",""]
+            the_len = the_name_list.length
+            the_new_name_list[3] = the_name_list[the_len-1]
+            if (the_name_list[the_len-2] == 'La' || the_name_list[the_len-2] == 'la' || the_name_list[the_len-2] == 'de'){
+               the_new_name_list[3] = the_name_list[the_len-2] + ' ' +the_new_name_list[3]
+                       the_len = the_len - 1
+            }
+
+            if (the_name_list[the_len-2] == 'La' || the_name_list[the_len-2] == 'la' || the_name_list[the_len-2] == 'de'){
+               the_new_name_list[3] = the_name_list[the_len-2] + ' ' +the_new_name_list[3]
+                       the_len = the_len - 1
+
+            }
+
+ 
+
+            for (i = 0; i < the_len - 1; i++) {
+                the_new_name_list[i] = the_name_list[i] 
+            }
+            return the_new_name_list
+        }
+
+        // The select handler. Call the chart's getSelection() method
+        function selectHandler() {
+            var selectedItem = chart.getSelection()[0];
+            if (selectedItem) {
+                var value = data.getValue(selectedItem.row, 0);//selectedItem.column);
+                values = value.split('|')
+
+                if (values.length == 3){
+                    the_id = values[0]
+                    the_birth_date = values[1]
+                    the_name = values[2]
+
+                    the_name_list = get_first_names_and_name(the_name)
+
+                    var opened = window.open("");            
+                    opened.document.write(
+            "<html><head><title>Mytitle</title></head><body>prenoms et nom : " + the_name + "<br>Identifiant : " + the_id + "<br></body></html>");
+
+            
+                }
+                //
+
+                else{
+
+                    the_id = values[0]
+                    the_birth_date = values[1]
+                    the_partner_id = values[2]
+                    the_partner_birth_date = values[3]
+                    the_name = values[4]
+                    children_count = values[code1_length - 1]
+
+                    new_children_iter_int = parseInt(children_count) + 1
+                    new_children_iter = new_children_iter_int.toString()
+
+                    the_couple_list = the_name.split('&') 
+                    the_name_list = get_first_names_and_name(the_couple_list[0])
+                    the_name2_list = get_first_names_and_name(the_couple_list[1])
+
+                     
+                    //+'|'+the_name_list+'|'+the_name2_list+'|'+the_couple_list[0]+'|'+the_couple_list[1]+'|'+the_name_list+'|'+the_name2_list+'|'+the_name_list.length+'|'+the_name2_list.length
+
+                    value = value.replace('&','et')
+
+                    var opened = window.open("");
+                    opened.document.write("<html><head><title>Mytitle</title></head><body>prenoms et nom de la personne : "+the_couple_list[0]+"<br>Identifiant : "+the_id+"<br>prenoms et nom du conjoint : "+the_couple_list[1]+"<br>Identifiant du conjoint : "+the_partner_id+"<br>Nombres d'enfants : "+children_count+"<br><a href='"+encodeURI("http://0.0.0.0:5000/person_modification.html?id="+the_id+"&birth_date="+the_birth_date+"&first_name1="+the_name_list[0]+"&first_name2="+the_name_list[1]+"&first_name3="+the_name_list[2]+"&last_name="+the_name_list[3])+"'>Modifier les infos sur la personne</a><br><a href='"+encodeURI("http://0.0.0.0:5000/person_modification.html?id="+the_partner_id+"&birth_date="+the_partner_birth_date+"&first_name1="+the_name2_list[0]+"&first_name2="+the_name2_list[1]+"&first_name3="+the_name2_list[2]+"&last_name="+the_name2_list[3])+"'>Modifier les infos sur le conjoint</a><br><a href='"+encodeURI("http://0.0.0.0:5000/children.html?id="+the_id+"&your_name="+the_name+"&new_children_iter="+new_children_iter)+"'>Ajouter un enfant</a><br><a href='"+encodeURI("http://0.0.0.0:5000/photo.html?id="+the_partner_id+"&first_name="+the_name2_list[0]+"&last_name="+the_name2_list[3]+"&is_couple=1")+"'>Ajouter une photo pour le couple ou le conjoint</a></body></html>");
+                }
+            }
+        }
+
+        // Listen for the 'select' event, and call my function selectHandler() when
+        // the user selects something on the chart.
+        google.visualization.events.addListener(chart, 'select', selectHandler);
+
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        var options = {'title':'Arbre Guillot',
+                     'width':1200,
+                     'height':600, 'size':'small'};
+
+chart.draw(data, options)
+        //chart.draw(data, {allowHtml:true});
+    }
+
+
+           </script>
+            </head>
+          <body>
+            
+            <div id="chart_div"></div>
+          </body>
+        </html>
